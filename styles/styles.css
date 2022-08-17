@@ -5,63 +5,76 @@
   --white: #ffffff;
   --team-color: #f5f4fa;
   --button-active: #188ce8;
-  --font-family-main:'Roboto', sans-serif;
-  --font-family-logo:'Raleway';
+  --font-family-main: 'Roboto', sans-serif;
+  --font-family-logo: 'Raleway';
 }
-h1,h2,h3,h4,p{
+h1,
+h2,
+h3,
+h4,
+p {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
 }
-ul,ol{
+ul,
+ol {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
-   list-style: none;
+  list-style: none;
 }
-img{
+img {
   display: block;
 }
 a {
   text-decoration: none;
+ 
+  
 }
 body {
   background-color: var(--white);
   color: var(--text-color);
-  font-family:var(--font-family-main);
+  font-family: var(--font-family-main);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.container{
+.container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  padding-left:15px ;
+  padding-left: 15px;
   padding-right: 15px;
-  outline: 3px solid red;
+ 
 }
-.section{
+.section {
   padding: 94px 215px;
-   outline: 5px solid yellow;
-
+  outline: 5px solid yellow;
 }
 
 /* < !-- навігація --> */
 
-.header{
-  border-bottom: 1px solid #ECECEC ;
+.header {
+  border-bottom: 1px solid #ececec;
+ 
+}
+nav{
+outline: 3px solid tomato;
+}
+.nav-contacts-list{
+  outline: 3px solid black;
 }
 .logo {
   color: var(--accent-color);
-  font-family:var(--font-family-logo);
+  font-family: var(--font-family-logo);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: inherit;
 }
-.logo-header {  
+.logo-header {
   color: #000000;
 }
 .logo-foot {
@@ -94,13 +107,6 @@ body {
 
 /* < !-- секція з кнопкою --> */
 
-.hero-title{
-  margin-bottom: 30px;
-min-width: 696px;
-/* padding: 200px 452px 280px  452px; */
-
-  
-}
 .hero {
   background-color: #2f303a;
 }
@@ -111,8 +117,9 @@ min-width: 696px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
-  
   margin-bottom: 30px;
+  min-width: 696px;
+  
 }
 .hero-button {
   background-color: var(--accent-color);
@@ -121,15 +128,16 @@ min-width: 696px;
   font-size: 16px;
   line-height: 1.87;
   padding: 10px 32px;
-  Radius: 4px;
-  
+  radius: 4px;
   
 }
-.hero-button:hover,.hero-button:focus{
-  background-color:var(--button-active);
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-active);
 }
-    
-.portfolio-buttons,.hero-button {
+
+.portfolio-buttons,
+.hero-button {
   cursor: pointer;
 }
 
@@ -154,15 +162,14 @@ min-width: 696px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
-  
 }
-.benefits-list{
+.benefits-list {
   outline: 3px solid green;
 }
 /* <!-- Чим ми займаємося --> */
 
 .work-title,
-.title{
+.title {
   margin-bottom: 50px;
   color: var(--title-color);
   font-weight: 700;
@@ -170,18 +177,17 @@ min-width: 696px;
   line-height: 1.16;
 }
 
-.benefit-box{
+.benefit-box {
   margin-right: 30px;
 }
-.work-list{
+.work-list {
   outline: 3px solid green;
 }
 /* < !-- Наша команда --> */
 .our-team {
   background-color: var(--team-color);
- 
 }
-.team-list{
+.team-list {
   background-color: var(--white);
   outline: 3px solid green;
 }
@@ -192,14 +198,14 @@ min-width: 696px;
   color: var(--title-color);
   margin-bottom: 10px;
 }
-.team-img{
+.team-img {
   margin-bottom: 30px;
 }
 /* footer */
 footer {
   background-color: #2f303a;
 }
-.logo{
+.logo {
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -214,19 +220,15 @@ footer {
 
 /* Портфоліо */
 
-
-
-
 .hidden-title {
   display: none;
 }
-.portfolio-btnlist{
+.portfolio-btnlist {
   padding-top: 94px;
-  margin-bottom:  34px;
+  margin-bottom: 34px;
   outline: 3px solid blue;
 }
-  .portfolio-gal-list{
-
+.portfolio-gal-list {
   outline: 3px solid blue;
 }
 .portfolio-buttons {
@@ -247,9 +249,6 @@ footer {
   background-color: var(--accent-color);
 }
 
-
-
-
 .portfolio-link {
   color: inherit;
   font-size: 16px;
@@ -263,7 +262,6 @@ footer {
   color: var(--title-color);
   margin-bottom: 4px;
 }
-.portfolio-img{
+.portfolio-img {
   margin-bottom: 20px;
 }
-
