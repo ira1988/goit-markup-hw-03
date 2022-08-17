@@ -18,11 +18,14 @@ ul,ol{
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
+   list-style: none;
 }
 img{
   display: block;
 }
-
+a {
+  text-decoration: none;
+}
 body {
   background-color: var(--white);
   color: var(--text-color);
@@ -31,14 +34,18 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-a {
-  text-decoration: none;
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left:15px ;
+  padding-right: 15px;
+  outline: 3px solid red;
 }
-ul {
-  list-style: none;
-} 
 .section{
   padding: 94px 215px;
+   outline: 5px solid yellow;
+
 }
 
 /* < !-- навігація --> */
@@ -91,13 +98,11 @@ ul {
   margin-bottom: 30px;
 min-width: 696px;
 /* padding: 200px 452px 280px  452px; */
-outline: 5px solid red;
+
   
 }
 .hero {
-
   background-color: #2f303a;
- 
 }
 .hero-title {
   font-weight: 900;
@@ -106,6 +111,8 @@ outline: 5px solid red;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
+  
+  margin-bottom: 30px;
 }
 .hero-button {
   background-color: var(--accent-color);
@@ -139,9 +146,7 @@ outline: 5px solid red;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
 }
-.our-benefits{
-  outline: 5px solid blue;
-}
+
 .benefits-title {
   color: var(--title-color);
   font-weight: 700;
@@ -151,13 +156,11 @@ outline: 5px solid red;
   margin-bottom: 10px;
   
 }
-.benefits-item{
-outline: 3px solid tomato;
-}
-/* <!-- Чим ми займаємося --> */
-.our-work{
+.benefits-list{
   outline: 3px solid green;
 }
+/* <!-- Чим ми займаємося --> */
+
 .work-title,
 .title{
   margin-bottom: 50px;
@@ -166,15 +169,19 @@ outline: 3px solid tomato;
   font-size: 36px;
   line-height: 1.16;
 }
-.work-item{
+
+.benefit-box{
+  margin-right: 30px;
+}
+.work-list{
   outline: 3px solid green;
 }
 /* < !-- Наша команда --> */
 .our-team {
   background-color: var(--team-color);
-  outline: 5px solid yellow;
+ 
 }
-.team-item{
+.team-list{
   background-color: var(--white);
   outline: 3px solid green;
 }
@@ -208,12 +215,18 @@ footer {
 /* Портфоліо */
 
 
+
+
 .hidden-title {
   display: none;
 }
 .portfolio-btnlist{
   padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom:  34px;
+  outline: 3px solid blue;
+}
+  .portfolio-gal-list{
+
   outline: 3px solid blue;
 }
 .portfolio-buttons {
@@ -235,16 +248,8 @@ footer {
 }
 
 
-/* portfolio link img */
-.portfolio-gal-list{
-  padding-top: 50px;
-  padding-left: 215px;
-  padding-right: 215px;
-  outline: 3px solid red;
-}
-.portfolio-gal-item{
-  outline: 3px solid purple;
-}
+
+
 .portfolio-link {
   color: inherit;
   font-size: 16px;

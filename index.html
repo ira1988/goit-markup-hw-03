@@ -17,7 +17,8 @@
   <body>
     <header>
       <!-- навігація -->
-      <nav>
+      <div class="container">
+        <nav>
         <a class="logo" href="./index.html"
           >Web<span class="logo-header">Studio</span></a
         >
@@ -45,24 +46,33 @@
           >
         </li>
       </ul>
+      </div>
+      
     </header>
     <main>
       <!-- секція з кнопкою -->
+      
       <section class="hero"  >
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <div class="container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
 
         <button class="hero-button" type="button">Замовити послугу</button>
+        </div> 
       </section>
+
       <!-- Особливості -->
       <section class="our-benefits section">
+       <div class="container">
         <h2 class="visually-hidden">Особливості</h2>
         <ul class="benefits-list" >
           <li class="benefits-item">
-            <h3 class="benefits-title">Увага до деталей</h3>
+             <h3 class="benefits-title">Увага до деталей</h3>
             <p class="benefits-text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
+          
+  
           </li>
           <li class="benefits-item">
             <h3 class="benefits-title">Пунктуальність</h3>
@@ -85,10 +95,12 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
       <!-- Чим ми займаємося -->
-      <section class="our-work section">
-        <h2 class="work-title">Чим ми займаємося</h2>
+       <section class="our-work section">
+      <div class="container">
+<h2 class="work-title">Чим ми займаємося</h2>
         <ul class="work-list">
           <li class="work-item">
             <img class="work-img"
@@ -115,11 +127,14 @@
             />
           </li>
         </ul>
-      </section>
+      </div>
+         </section>
+     
 
       <!-- Наша команда -->
       <section class="our-team section">
-        <h2 class="title">Наша команда</h2>
+        <div class="container"> 
+          <h2 class="title">Наша команда</h2>
         <ul class="team-list" >
           <li class="team-item">
             <img
@@ -127,9 +142,10 @@
               alt=" чоловік з бородою в коричневій сорочці"
               width="270"
             />
-
-            <h3 class="team-title">Ігор Дем'яненко</h3>
+<div class="team-box"><h3 class="team-title">Ігор Дем'яненко</h3>
             <p  class="team-position"lang="en">Product Designer</p>
+          </div>
+            
           </li>
           <li class="team-item">
             <img class="team-img"
@@ -159,7 +175,10 @@
             <p class="team-position" lang="en">UI Designer</p>
           </li>
         </ul>
-      </section>
+        </div>
+         </section>
+     
+     
     </main>
 
     <footer>
