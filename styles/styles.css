@@ -121,6 +121,12 @@ body {
 .nav-contacts-list,.nav-list{
   display: flex ;
 }
+.nav-box{
+  display: flex;
+}
+.nav-contacts-list{
+  margin-left: auto;
+}
 /* < !-- секція з кнопкою --> */
 
 .hero-title {
