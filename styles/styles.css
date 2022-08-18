@@ -47,12 +47,13 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+   background-color: rgb(185, 239, 234);
+  
  
 }
-.section {
-  padding: 94px 215px;
-  outline: 5px solid yellow;
-}
+
+
+
 
 /* < !-- навігація --> */
 
@@ -60,12 +61,7 @@ body {
   border-bottom: 1px solid #ececec;
  
 }
-nav{
-outline: 3px solid tomato;
-}
-.nav-contacts-list{
-  outline: 3px solid black;
-}
+
 .logo {
   color: var(--accent-color);
   font-family: var(--font-family-logo);
@@ -73,6 +69,7 @@ outline: 3px solid tomato;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: inherit;
+  
 }
 .logo-header {
   color: #000000;
@@ -81,6 +78,17 @@ outline: 3px solid tomato;
   color: var(--white);
 }
 
+<!-- навігація -->
+.nav-contacts-list,.nav-list{
+  display: flex ;
+}
+.nav-box{
+  display: flex;
+}
+
+.nav-list-item:not(:last-child),.nav-contacts-item:not(:last-child){
+  margin-right: 50px;
+} 
 .nav-link,
 .nav-contacts {
   font-family: inherit;
@@ -90,6 +98,9 @@ outline: 3px solid tomato;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+   padding-top: 40px;
+  padding-bottom: 40px;
+  display: block ;
 }
 .nav-link:hover,
 .nav-contacts:hover,
@@ -101,15 +112,17 @@ outline: 3px solid tomato;
   color: var(--accent-color);
 }
 
+
 .nav-contacts {
   color: var(--text-color);
+ 
 }
 
+.nav-contacts-list,.nav-list{
+  display: flex ;
+}
 /* < !-- секція з кнопкою --> */
 
-.hero {
-  background-color: #2f303a;
-}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -118,7 +131,7 @@ outline: 3px solid tomato;
   text-transform: uppercase;
   color: var(--white);
   margin-bottom: 30px;
-  min-width: 696px;
+  
   
 }
 .hero-button {
@@ -227,9 +240,19 @@ footer {
   padding-top: 94px;
   margin-bottom: 34px;
   outline: 3px solid blue;
+  display: flex;
+  
 }
+.portfolio-item:not(:last-child){
+  margin-left:30px;
+}
+  
+
 .portfolio-gal-list {
   outline: 3px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  margin
 }
 .portfolio-buttons {
   font-family: inherit;
@@ -249,6 +272,9 @@ footer {
   background-color: var(--accent-color);
 }
 
+.nav-flex{
+  display: flex;
+}
 .portfolio-link {
   color: inherit;
   font-size: 16px;
