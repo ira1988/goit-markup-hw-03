@@ -72,6 +72,7 @@ body {
   display: block;
    padding-top: 40px;
   padding-bottom: 40px;
+  display: block;
   
 }
 .logo-header {
@@ -187,6 +188,7 @@ body {
 }
 .benefits-list {
   outline: 3px solid green;
+  display: flex;
 }
 /* <!-- Чим ми займаємося --> */
 
@@ -204,6 +206,7 @@ body {
 }
 .work-list {
   outline: 3px solid green;
+  display: flex;
 }
 /* < !-- Наша команда --> */
 .our-team {
@@ -212,6 +215,7 @@ body {
 .team-list {
   background-color: var(--white);
   outline: 3px solid green;
+  display: flex;
 }
 .team-title {
   font-weight: 500;
@@ -227,10 +231,7 @@ body {
 footer {
   background-color: #2f303a;
 }
-.logo {
-  display: inline-block;
-  margin-bottom: 20px;
-}
+
 .address {
   color: var(--white);
   font-style: normal;
