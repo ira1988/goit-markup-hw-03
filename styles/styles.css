@@ -8,12 +8,15 @@
   --hero-bcc:#2F303A;
   --font-family-main: 'Roboto', sans-serif;
   --font-family-logo: 'Raleway';
+  --border-color:#EEEEEE;
+  --border-header:#ECECEC;
 }
 h1,
 h2,
 h3,
 h4,
 p {
+
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -59,7 +62,7 @@ body {
 /* < !-- навігація --> */
 
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-header);
  
 }
 
@@ -214,7 +217,7 @@ padding-bottom: 32px;
 /* <!-- Чим ми займаємося --> */
 
 .work-title,
-.team-title{
+.our-team-title{
   margin-bottom: 50px;
   color: var(--title-color);
   font-weight: 700;
@@ -270,33 +273,6 @@ footer {
 }
 
 /* Портфоліо */
-.portfolio{
-  background-color: rgb(232, 232, 167);
-}
-.hidden-title {
-  display: none;
-}
-.portfolio-btnlist {
-  padding-top: 94px;
-  margin-bottom: 34px;
-  display: flex;
-margin-bottom: 34px;
-align-items: center;
-}
-.portfolio-item{
-  outline: 3px solid blue;
-}
-.portfolio-item:not(:last-child){ 
-    margin-right: 30px;
-}
-.portfolio-gal-list{
-  display: flex;
-  flex-wrap: wrap;
-  
-}
-.portfolio-gal-item{
-outline: 3px solid blue;
-}
 .portfolio-buttons {
   font-family: inherit;
   font-style: 400;
@@ -307,7 +283,8 @@ outline: 3px solid blue;
   color: var(--title-color);
   background-color: #f5f4fa;
   padding: 6px 22px;
-  border: transparent;
+  margin-left: auto;
+  border:1px solid var(--border-color)
 }
 .portfolio-buttons:hover,
 .portfolio-buttons:focus {
@@ -315,9 +292,39 @@ outline: 3px solid blue;
   background-color: var(--accent-color);
 }
 
-.nav-flex{
+
+.portfolio-btnlist {
   display: flex;
+  margin-bottom: 34px; 
+  margin-left: auto;
+  margin-right: auto;
+
+outline: 3px solid red;
+
 }
+.portfolio-gal-item{
+   flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-item:not(:last-child){ 
+    margin-right: 30px;
+}
+.portfolio-gal-item:not(:nth-child(3n + 3)){
+  margin-right: 30px;
+}
+.portfolio-gal-item:not(:last-child){
+  margin-bottom: 30px;
+}
+.portfolio-gal-list{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+/* .portfolio-gal-item{
+outline: 3px solid blue;
+} */
+
+
 .portfolio-link {
   color: inherit;
   font-size: 16px;
@@ -330,7 +337,16 @@ outline: 3px solid blue;
   letter-spacing: 0.06em;
   color: var(--title-color);
   margin-bottom: 4px;
+  padding-top: 20px;
 }
-.portfolio-img {
-  margin-bottom: 20px;
+.portfolio-text{
+  padding-bottom: 20px;
 }
+
+.gal-title-box{
+  background-color: var(--white);
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid  var(--border-color);
+  border-bottom: 1px solid  var(--border-color);
+}
+
