@@ -270,6 +270,8 @@ margin-right: auto;
 }
 
 /* footer */
+
+
 .logo-foot {
   color: var(--white);
 }
@@ -296,38 +298,21 @@ footer {
 .footer-link {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .link-item:not(:last-child){
-  margin-bottom: 9px;
-}
+margin-bottom: 9px;
+  }
 
 
 /* Портфоліо */
+.portfolio{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio-btnlist {
   display: flex;
-  margin-bottom: 34px;
+  align-items: center;
+  margin-bottom: 50px;
   justify-content: center;
-}
-.portfolio-gal-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolio-gal-item {
-  flex-basis: calc((100% - 60px) / 3);
-}
-
-.portfolio-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.portfolio-gal-item:not(:nth-child(3n + 3)) {
-  margin-right: 30px;
-}
-.portfolio-gal-item:not(:last-child) {
-  margin-bottom: 30px;
-}
-.portfolio-text {
-  padding-bottom: 20px;
 }
 .portfolio-buttons {
   font-family: inherit;
@@ -340,12 +325,55 @@ footer {
   background-color: #f5f4fa;
   padding: 6px 22px;
   margin-left: auto;
-  border: 1px solid var(--border-color);
+  border: none;
+  border-radius: 4px;
+ 
 }
 .portfolio-buttons:hover,
 .portfolio-buttons:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+shadow: 0px, 2px solid rgba(0, 0, 0, 0.12);
+
+}
+
+.portfolio-item:not(:last-child){
+  margin-right: 8px;
+}
+
+
+.portfolio-gal-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.portfolio-gal-item {
+  flex-basis: calc(100%/3 - 60px);
+}
+.portfolio-gal-list{
+ gap: 30px;
+}
+
+
+
+.portfolio-buttons {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  background-color: #f5f4fa;
+  padding: 6px 22px;
+  margin-left: auto;
+  border: none;
+  border-radius: 4px;
+}
+.portfolio-buttons:hover,
+.portfolio-buttons:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+box-shadow: ;
 }
 
 .portfolio-link {
@@ -360,9 +388,11 @@ footer {
   letter-spacing: 0.06em;
   color: var(--title-color);
   margin-bottom: 4px;
-  padding-top: 20px;
+  
+
 }
 .gal-title-box {
+  padding: 20px 24px;
   background-color: var(--white);
   border-right: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
