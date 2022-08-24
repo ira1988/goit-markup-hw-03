@@ -56,7 +56,7 @@ body {
 /* < !-- навігація --> */
 
 .header {
-  border-bottom: 1px solid var(--border-header);
+  /* border-bottom: 1px solid var(--border-header); */
 }
 .logo {
   color: var(--accent-color);
@@ -89,6 +89,7 @@ body {
 .nav-box {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--border-header);
 }
 
 
@@ -139,7 +140,18 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--hero-bcc);
-
+ 
+}
+.hero-background{
+  background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
+  url(../images/bgimg.jpg);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size:cover ;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .hero-title {
   font-weight: 900;
@@ -203,6 +215,7 @@ margin-right: auto;
 .benefits-list {
   display: flex;
   align-items: center;
+  outline: 2px solid red;
 
 }
 .benefits-item:not(:last-child),
@@ -213,6 +226,9 @@ margin-right: auto;
 .benefits-item{
   flex-basis:calc(100% - 90px/4);
 }
+.benefits-item{
+  outline: 2px solid black;
+}
 .benefits-title {
   color: var(--title-color);
   font-weight: 700;
@@ -221,6 +237,21 @@ margin-right: auto;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+.benefits-item::before {
+  content: "";
+
+  height: 120px;
+  background-color: 
+  tomato;
+ display: block; 
+
+background-repeat: no-repeat;
+background-position: center;
+}
+.icon-clock::before{
+  background-image: url(../images/iconclock.svg);
+} 
+
 /* <!-- Чим ми займаємося --> */
 .our-work {
   padding-top: 94px;
